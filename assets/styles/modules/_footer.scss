@@ -5,7 +5,6 @@
 
   &__logo {
     @include flex-container(row, center, center);
-    background: $black;
     padding-top: 20px;
     padding-bottom: 12px;
   }

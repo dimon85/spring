@@ -1,5 +1,7 @@
+@include font-face('FiraSans', '/assets/fonts/FiraSans-Light', normal, null, woff woff2);
+
 body {
-  font-family: $font-family-base;
+  font-family: 'FiraSans';
   font-size: $font-size-base;
   line-height: $line_height_base;
   color: $text-color;
@@ -8,7 +10,7 @@ body {
 }
 
 * {
-  transition: background $transition-base, color $transition-base, opacity $transition-base, transform $transition-base;
+  transition: background $transition-base, opacity $transition-base, transform $transition-base;
 }
 
 a {
@@ -27,7 +29,7 @@ a {
   }
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $font-family-header;
+  font-family: 'FiraSans';
   font-weight: 700;
   text-transform: uppercase;
   transition: font-size .3s

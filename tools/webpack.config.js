@@ -83,7 +83,18 @@ module.exports = {
         use: 'url-loader',
       },
       // fonts
-      { test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['url-loader'] }
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use:
+          [
+            {
+              loader: 'url-loader',
+              options: {
+                limit: 10000,
+              }
+            }
+          ]
+      }
     ]
   },
   plugins: [
