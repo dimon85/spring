@@ -1,0 +1,31 @@
+.footer {
+  height: 240px;
+  background: $black;
+  color: $white;
+
+  &__logo {
+    @include flex-container(row, center, center);
+    background: $black;
+    padding-top: 20px;
+    padding-bottom: 12px;
+  }
+
+  &__menu {
+    @include flex-container(row, center, center);
+  }
+}
+
+.menu {
+  @include flex-container(column, center, center);
+  // flex: 1;
+  padding: 0 40px;
+  
+  &__list {
+    @include flex-container(column, center, center);
+  }
+
+  &__item {
+    font-size: $font-size-small;
+    margin-top: 14px;
+  }
+}

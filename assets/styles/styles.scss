@@ -1,10 +1,18 @@
 
-//core
-@import "core/mixins";
-@import "core/variables";
-@import "core/layout.scss";
+// basic
+@import "core/_colors",
+        "core/_variables",
+        "core/_mixins",
+        "core/_helpers",
+        "core/_main";
 // @import "core/fonts";
 
+// plugins
+@import "plugins/_normalize";
 
-//globally used components
-@import "components/general";
+// modules
+@import "modules/_headers",
+        "modules/_footer";
+
+// pages
+@import "inner/_page_home";

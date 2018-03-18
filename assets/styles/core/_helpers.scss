@@ -1,0 +1,51 @@
+
+.underlined {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 92px;
+    left: 50%;
+    margin-left: -46px;
+    bottom: 0;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+
+.icon-checkmark {
+  color: #3dbe9b;
+}
+
+.toShow {
+  display: none;
+}
+
+
+.fullWidth {
+  max-width: 100%;
+  width: 100% !important;
+}
+
+// paddings
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.noBpadding {
+  padding-bottom: 0 !important;
+}

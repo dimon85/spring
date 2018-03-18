@@ -1,0 +1,41 @@
+.header {
+  &__navbar {
+    @include flex-container(row, center, center);
+
+    background: $black;
+    height: 45px;
+    width: 100%;
+    border-bottom: .5px solid $border-color;
+    z-index: 10;
+  }
+
+  &__item {
+    padding: 0 30px;
+  }
+
+  &__logo {
+    @include flex-container(row, center, center);
+    background: $black;
+    margin-top: 45px;
+    height: 255px;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.logo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: $grey-light;
+}
+
+.logo-small {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background: $grey-light;
+}
