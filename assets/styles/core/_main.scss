@@ -2,7 +2,7 @@
 @include font-face(FiraSans, '/fonts/FiraSans-Bold', bold, null, woff woff2);
 
 body {
-  font-family: FiraSans;
+  font-family: FiraSans, sans-serif;
   font-size: $font-size-base;
   line-height: $line_height_base;
   color: $text-color;

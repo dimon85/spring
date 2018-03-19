@@ -29,6 +29,8 @@ app.use(require('webpack-hot-middleware')(compiler));
 // -----------------------------------------------------------------------------
 app.use('/', express.static(path.join(__dirname, '../assets')));
 app.use('/fonts',express.static(path.join(__dirname, '../assets/fonts')));
+app.use('/images',express.static(path.join(__dirname, '../assets/images')));
+
 app.use(allowCrossDomain);
 
 app.get('*', (req, res) => {

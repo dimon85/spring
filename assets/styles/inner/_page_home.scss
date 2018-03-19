@@ -4,21 +4,50 @@
 }
 
 .block {
-  flex: 1;
   padding: 20px 0;
-  width: 540px;
-  text-align: center;
+  max-width: 540px;
   border-bottom: 1px solid $border-color;
 
   &__title {
     font-size: $font-size-bigger;
     font-weight: 500;
     padding-bottom: 20px;
+    text-align: center;
   }
 
   &__info {
     font-size: $font-size-small;
     font-weight: 500;
+    padding: 0 5px;
     padding-bottom: 15px;
   }
+
+  &__list-row {
+    @include flex-container(row, space-between, flex-start);
+  }
+
+  &__list-column {
+    @include flex-container(column, space-between, center);
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.card {
+  @include flex-container(column, flex-start, stretch);
+
+  &__title {
+    max-width: 120px;
+    text-align: center;
+  }
+
+  a, a:hover {
+    color: black
+  }
+
+  img {
+    height: 125px;
+  }
+
 }
