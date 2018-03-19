@@ -10,6 +10,9 @@
 // plugins
 @import "plugins/_normalize";
 
+// elements
+@import 'atoms/controls';
+
 // modules
 @import "modules/_headers",
         "modules/_footer";

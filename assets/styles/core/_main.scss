@@ -1,11 +1,12 @@
-@include font-face('FiraSans', '/assets/fonts/FiraSans-Light', normal, null, woff woff2);
+@include font-face(FiraSans, '/fonts/FiraSans-Medium', normal, null, woff woff2);
+@include font-face(FiraSans, '/fonts/FiraSans-Bold', bold, null, woff woff2);
 
 body {
-  font-family: 'FiraSans';
+  font-family: FiraSans;
   font-size: $font-size-base;
   line-height: $line_height_base;
   color: $text-color;
-  font-weight: $font-weight-normal;
+  font-weight: normal;
   background: $white;
 }
 
@@ -16,6 +17,7 @@ body {
 a {
   color: $white;
   text-decoration: none;
+
 
   &:focus {
     color: inherit;
@@ -29,7 +31,7 @@ a {
   }
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'FiraSans';
+  font-family: FiraSans, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   transition: font-size .3s

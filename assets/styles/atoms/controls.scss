@@ -1,0 +1,53 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  // background-color: $lime-green;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  transition: background 0.2s;
+  box-sizing: border-box;
+
+  &:not(:disabled) {
+    &:hover {
+      background-color: $grey-hover;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &.minw {
+    min-width: 180px;
+  }
+
+  &.sm {
+    height: 40px;
+    font-size: 17px;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &.bordered {
+    background: #fff;
+    border: 1px solid $black;
+    color: $black;
+
+    &:hover {
+      border-color: darken($black, 5%);
+      color: darken($black, 5%);
+    }
+  }
+}

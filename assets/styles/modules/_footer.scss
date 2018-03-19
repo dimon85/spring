@@ -16,7 +16,6 @@
 
 .menu {
   @include flex-container(column, center, center);
-  // flex: 1;
   padding: 0 40px;
   
   &__list {

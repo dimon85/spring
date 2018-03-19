@@ -1,8 +1,24 @@
 .content {
-  min-height: 100vh;
+  @include flex-container(column, center, center);
+  margin-top: 25px;
 }
 
 .block {
-  min-height: 50vh;
-  border: 1px solid black;
+  flex: 1;
+  padding: 20px 0;
+  width: 540px;
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+
+  &__title {
+    font-size: $font-size-bigger;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+
+  &__info {
+    font-size: $font-size-small;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
 }
