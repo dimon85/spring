@@ -22,11 +22,6 @@
   text-align: center;
 }
 
-
-.icon-checkmark {
-  color: #3dbe9b;
-}
-
 .toShow {
   display: none;
 }
@@ -48,4 +43,9 @@
 
 .noBpadding {
   padding-bottom: 0 !important;
+}
+
+.icon-menu {
+  color: $white;
+  font-size: 22px;
 }

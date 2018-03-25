@@ -1,164 +1,189 @@
 <div class="app_wrapper">
-  <!-- Header -->
-  <div class="header">
-    <div class="header__navbar header--fixed">
-        <a class="header__item" href="#">Type-something</a>
-        <a class="header__item" href="#">Type-something</a>
-        <a class="header__item" href="#">Type-something</a>
-        <a class="header__item" href="#">Type-something</a>
-    </div>
-    <div class="header__logo">
-      <div class="logo"></div>
-    </div>
-  </div>
-
-  <!-- Content -->
-  <div class="content">
-    <!-- Main Block -->
-    <div class="block textCenter">
-        <div class="block__title">What is An Antioxidant</div>
-        <div class="block__info">
-          An individual may get diabetes when the pancreas can no
-          longer secrete the needed hormones that produce insulin.
-          The insulin maintains the glucose in the blood to be normal.
-          Low insulin means that the level of glucose, which is sugar in the blood,
-          may get high and may lead to diabetes.
-
-          The autoimmune reaction is a type 1 diabetes where the cells
-          in the pancreas organ that produces the needed insulin are destroyed.
-          This results to the total loss of insulin in the hormones.
-          This happens because the body has its own hormones that protects and destroys
-          its own pancreas cells. Although there is no scientific proof why
-          this occurrence in the pancreas happens, some studies have some theories
-          that may possibly be related in this kind of reaction.
-          Some say that this happens when there is exposure of a newly born to
-          a cow’s milk, the infection from viruses and bacteria,
-          and the exposure from food-borne chemical toxins.
-          There is not enough evidence yet to prove some theories that may
-          trigger the cause of diabetes.
-        </div>
-        <a class="btn bordered" href="#">Read next</a>
-    </div>
-    <!-- Last news block -->
-    <div class="block fullWidth">
-      <div class="block__title">Last news</div>
-      <div class="block__list-row">
-        <div class="card">
-          <img class="card__preview" src="/images/image_1.png" alt="card 1">
-          <a class="card__title" href="#">Title 1</a>
-        </div>
-        <div class="card">
-          <img class="card__preview" src="/images/image_2.png" alt="card 1">
-          <a class="card__title" href="#">Wery long Title 2</a>
-        </div>
-        <div class="card">
-          <img class="card__preview" src="/images/image_3.png" alt="card 1">
-          <a class="card__title" href="#">
-            Wery long Title With long link 3
-            link 4 subtitle wery long
-            link 4 subtitle wery long
-            link 4 subtitle wery long
-          </a>
-        </div>
-        <div class="card ">
-          <img class="card__preview" src="/images/image_4.png" alt="card 1">
-          <a class="card__title" href="#">
-            Wery long Title With long link 4 subtitle wery long
-          </a>
-        </div>
+  <div>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__navbar header--fixed" :class="{ 'toggle-show': toggle }">
+          <div
+          class="header__item header__item--toggle"
+          @click="toggle = !toggle"
+          >
+            <i class="icon-menu" />
+          </div>  
+        <nav class="header__items">
+            <a class="header__item" href="#">Type-something1</a>
+            <a class="header__item" href="#">Type-something2</a>
+            <a class="header__item" href="#">Type-something3</a>
+            <a class="header__item" href="#">Type-something4</a>
+          </nav>
+      </div>
+      <div class="header__logo">
+        <div class="logo"></div>
       </div>
     </div>
-    <!-- Block with Articles -->
-    <div class="block">
-      <div class="block__title">Articles</div>
-      <div class="block__list-column">
-        <div class="card textCenter">
-          <div class="card__in">
-            <img src="/images/image_land_1.png" alt="card 1">
-            <div>Remedies For Colic</div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Main Block -->
+      <div class="block textCenter">
+          <div class="block__title">What is An Antioxidant</div>
+          <div class="block__info">
+            <p>
+              An individual may get diabetes when the pancreas can no
+              longer secrete the needed hormones that produce insulin.
+              The insulin maintains the glucose in the blood to be normal.
+              Low insulin means that the level of glucose, which is sugar in the blood,
+              may get high and may lead to diabetes.
+            </p>
+            <p>
+              The autoimmune reaction is a type 1 diabetes where the cells
+              in the pancreas organ that produces the needed insulin are destroyed.
+              This results to the total loss of insulin in the hormones.
+              This happens because the body has its own hormones that protects and destroys
+              its own pancreas cells. Although there is no scientific proof why
+              this occurrence in the pancreas happens, some studies have some theories
+              that may possibly be related in this kind of reaction.
+              Some say that this happens when there is exposure of a newly born to
+              a cow’s milk, the infection from viruses and bacteria,
+              and the exposure from food-borne chemical toxins.
+              There is not enough evidence yet to prove some theories that may
+              trigger the cause of diabetes.
+            </p>
           </div>
-          <div class="card__desc ">
-              Classical homeopathy is generally defined as a system of 
-              medical treatment based on the use of minute quantities of 
-              remedies that in larger doses produce effects similar to those
-               of the disease being treated. It is believed that very small 
-               doses of a medication could have very powerful healing effects 
-               because their potency could be affected by vigorous and methodical
+          <a class="btn bordered medium" href="#">Read next</a>
+      </div>
+      <!-- Last news block -->
+      <div class="block fullWidth">
+        <div class="block__title">Last news</div>
+        <div class="block__list-row">
+          <div class="card">
+            <img class="card__preview" src="/images/image_1.png" alt="card 1">
+            <a class="card__title" href="#">Title 1</a>
+          </div>
+          <div class="card">
+            <img class="card__preview" src="/images/image_2.png" alt="card 1">
+            <a class="card__title" href="#">Wery long Title 2</a>
+          </div>
+          <div class="card">
+            <img class="card__preview" src="/images/image_3.png" alt="card 1">
+            <a class="card__title" href="#">
+              Wery long Title With long link 3
+              link 4 subtitle wery long
+              link 4 subtitle wery long
+              link 4 subtitle wery long
+            </a>
+          </div>
+          <div class="card ">
+            <img class="card__preview" src="/images/image_4.png" alt="card 1">
+            <a class="card__title" href="#">
+              Wery long Title With long link 4 subtitle wery long
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Block with Articles -->
+      <div class="block">
+        <div class="block__title">Articles</div>
+        <div class="block__list-column">
+          <!-- CARD 1 -->
+          <div class="card textCenter">
+            <div class="card__in">
+              <img src="/images/image_land_1.png" alt="card 1">
+              <span>Remedies For Colic</span>
+            </div>
+            <div class="card__desc">
+              <p>
+                Classical homeopathy is generally defined as a system of 
+                medical treatment based on the use of minute quantities of 
+                remedies that in larger doses produce effects similar to those
+                of the disease being treated. It is believed that very small 
+                doses of a medication could have very powerful healing effects 
+                because their potency could be affected by vigorous and methodical
                 shaking. This is referred to this alleged increase in potency by
-                 vigorous shaking as dynamization. It is also thought succussion
-                  could release immaterial and spiritual powers, thereby making
-                   substances more active. Tapping on a leather pad or the heel
-                    of the hand was alleged to double the dilution.
+                vigorous shaking as dynamization. It is also thought succussion
+                could release immaterial and spiritual powers, thereby making
+                substances more active. Tapping on a leather pad or the heel
+                of the hand was alleged to double the dilution.
+              </p>
 
               Examples include: the use of an isopathic (disease associated)
-               agent as a first prescription in a stuck case, when the beginning
-                of disease coincides with a specific event such as vaccination;
-                 the use of a chemically related substance when a remedy fails
+              agent as a first prescription in a stuck case, when the beginning
+              of disease coincides with a specific event such as vaccination;
+              the use of a chemically related substance when a remedy fails
+              yet seems well-indicated; and more recently, the use of substances
+              ed on their natural classification (the periodic table or biological
+              taxonomy). This last approach is considered to be promising by
+              some in the homeopathic community, because it allows for grouping
+              remedies and classifying the ever-burgeoning Materia Medica, but
+              is rejected by many purists because it involves speculation about remedy action without proper provings.
+            </div>
+            <a class="btn bordered medium" href="#">Read more</a>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="card textCenter">
+              <div class="card__in">
+                <img src="/images/image_land_2.png" alt="card 2">
+                <span>Remedies For Colic</span>
+              </div>
+              <div class="card__desc">
+                <p>
+                  Examples include: the use of an isopathic (disease associated)
+                  agent as a first prescription in a stuck case, when the beginning
+                  of disease coincides with a specific event such as vaccination;
+                  the use of a chemically related substance when a remedy fails
                   yet seems well-indicated; and more recently, the use of substances
                   ed on their natural classification (the periodic table or biological
-                   taxonomy). This last approach is considered to be promising by
-                    some in the homeopathic community, because it allows for grouping
-                     remedies and classifying the ever-burgeoning Materia Medica, but is rejected by many purists because it involves speculation about remedy action without proper provings.
-              
-              There are estimated to be more than 100,000 physicians practicing
-               homeopathy worldwide, with an estimated 500 million people
-                receiving treatment. More than 12,000 medical doctors and
-                 licensed health care practitioners administer homeopathic
-                  treatment in the UK, France, and Germany. Since 2001,
-                   homeopathy is regulated in the European
-                    Union by Directive 2001/83/EC; the latest amendments
-                     make it compulsory for member states to implement a
-                      simple registration procedure for homeopathic remedies.
-              
-              In the UK, homeopathic remedies may be sold over the counter.
-               The UK has five homeopathic hospitals where treatment, funded
-                by the National Health Service, is available and many regional
-                 clinics. Homeopathy is not practiced by most of the medical
-                  profession, but there is a core of public support, including
-                   from the Prince of Wales.
-          </div>
-          <a class="btn bordered" href="#">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
+                  taxonomy). This last approach is considered to be promising by
+                  some in the homeopathic community, because it allows for grouping
+                  remedies and classifying the ever-burgeoning Materia Medica, but
+                  is rejected by many purists because it involves speculation about
+                  remedy action without proper provings.
+                </p>
+              </div>
+              <a class="btn bordered medium" href="#">Read more</a>
+            </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <div class="footer__logo">
-      <div class="logo-small"></div>
+        </div>
+      </div>
     </div>
-    <div class="footer__menu">
-      <div class="menu">
-        <div class="menu__title">Type-something</div>
-        <div class="menu__list">
-          <a class="menu__item" href="#">Type something</a>
-          <a class="menu__item" href="#">Type something</a>
-          <a class="menu__item" href="#">Type something</a>
-        </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer__logo">
+        <div class="logo-small"></div>
       </div>
-      <div class="menu">
-        <div class="menu__title">Type-something</div>
-        <div class="menu__list">
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
+      <div class="footer__menu">
+        <div class="menu">
+          <div class="menu__title">Type-something</div>
+          <div class="menu__list">
+            <a class="menu__item" href="#">Type something</a>
+            <a class="menu__item" href="#">Type something</a>
+            <a class="menu__item" href="#">Type something</a>
+          </div>
         </div>
-      </div>
-      <div class="menu">
-        <div class="menu__title">Type-something</div>
-        <div class="menu__list">
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
+        <div class="menu">
+          <div class="menu__title">Type-something</div>
+          <div class="menu__list">
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+          </div>
         </div>
-      </div>
-      <div class="menu">
-        <div class="menu__title">Type-something</div>
-        <div class="menu__list">
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
-          <a class="menu__item" href="#">Type-something</a>
+        <div class="menu">
+          <div class="menu__title">Type-something</div>
+          <div class="menu__list">
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+          </div>
+        </div>
+        <div class="menu">
+          <div class="menu__title">Type-something</div>
+          <div class="menu__list">
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+            <a class="menu__item" href="#">Type-something</a>
+          </div>
         </div>
       </div>
     </div>

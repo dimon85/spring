@@ -11,7 +11,9 @@ body {
 }
 
 * {
-  transition: background $transition-base, opacity $transition-base, transform $transition-base;
+  transition: background $transition-base,
+              opacity $transition-base,
+              transform $transition-base;
 }
 
 a {
