@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 30px;
-  font-size: 8px;
+  font-size: $font-size-small;
   text-align: center;
   color: #fff;
   padding: 0 20px;
@@ -28,10 +28,6 @@
 
   &.minw {
     min-width: 180px;
-  }
-
-  &.medium {
-    width: 100px;
   }
 
   &.sm {

@@ -1,6 +1,5 @@
 .header {
   &__navbar {
-    // padding: 15px 0;
     background: $black;
     border-bottom: .5px solid $border-color;
     z-index: 10;
@@ -10,6 +9,7 @@
       .header__items {
         @include xs; @include sm  {
           @include flex-container(column, flex-end, center);
+          padding-bottom: 10px;
         }
       }
     }

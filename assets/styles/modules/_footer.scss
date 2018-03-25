@@ -1,5 +1,4 @@
 .footer {
-  height: 240px;
   background: $black;
   color: $white;
 
@@ -11,11 +10,28 @@
 
   &__menu {
     @include flex-container(row, center, center);
+    flex-wrap: wrap;
+
+    @include md {
+      @include flex-container(row, center, center);
+
+    }
+
+    @include xs; @include sm {
+      @include flex-container(column, center, center);
+    }
+  }
+
+  .copyright {
+    font-size: $font-size-smallest;
+    text-align: center;
+    padding: 20px 0 10px;
   }
 }
 
 .menu {
   @include flex-container(column, center, center);
+  margin: 15px 0;
   padding: 0 40px;
   
   &__list {
@@ -25,5 +41,16 @@
   &__item {
     font-size: $font-size-small;
     margin-top: 14px;
+  }
+
+
+  @include md {
+    flex-basis: calc(33% - 14px);
+  }
+
+  @include xs; @include sm {
+    @include flex-container(column, center, center);
+
+    margin: 15px 0; 
   }
 }
