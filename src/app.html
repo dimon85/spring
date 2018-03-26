@@ -3,11 +3,8 @@
     <!-- Header -->
     <div class="header">
       <div class="header__navbar header--fixed" :class="{ 'toggle-show': toggle }">
-          <div
-          class="header__item header__item--toggle"
-          @click="toggle = !toggle"
-          >
-            <i class="mobile-menu">
+          <div class="header__item header__item--toggle">
+            <i class="mobile-menu" @click="toggle = !toggle">
               <span></span>
               <span></span>
               <span></span>

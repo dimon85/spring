@@ -28,7 +28,6 @@
 
     &--toggle {
       display: none;
-      cursor: pointer;
 
       @include xs; @include sm  {
         @include flex-container(row, flex-end, center);
